@@ -90,7 +90,7 @@ selected_subfolder = st.radio("상세 폴더를 선택하세요:", folder_option
 if selected_subfolder == "related":
     target_folder_path = related_folder_path
 else:
-    target_folder_path = os.path.join(BASE_FOLDER, selected_search_folder) #수정정
+    target_folder_path = os.path.join(BASE_FOLDER, selected_search_folder) #수정
 
 # -----------------------------
 # 4) 선택된 폴더 내의 이미지 표시
@@ -101,6 +101,7 @@ st.header(f"폴더: {selected_search_folder} / {selected_subfolder}")
 #-------캐싱 추가 ---------------------------------------------
 @st.cache_data
 def get_image_files(folder_path):
+        
         # 유효한 이미지 확장자
     valid_extensions=(".jpg", ".jpeg", ".png", ".gif")  
     return[
