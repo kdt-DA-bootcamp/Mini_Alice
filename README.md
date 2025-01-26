@@ -93,7 +93,7 @@ Streamlit 앱 실행
 Streamlit 앱을 실행하여 수집된 이미지를 시각적으로 확인하고 최종 디자인을 선택합니다.
 
 ```bash
-streamlit run app.py
+streamlit run nail_app.py
 ```
 
 사용 방법
