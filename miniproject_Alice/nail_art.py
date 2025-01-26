@@ -217,7 +217,8 @@ if __name__ == "__main__":
     """
     모든 검색어에 대해 Pinterest 이미지 크롤링을 실행합니다.
     """
-    base_folder = "pinterest_images1"
+     # 폴더명 변경 가능합니다. "pinterest_images1" 쌍따옴표 안의 문자열을 변경하세요
+    base_folder = "pinterest_images1" 
     os.makedirs(base_folder, exist_ok=True)
 
     for keyword in search_keywords:
